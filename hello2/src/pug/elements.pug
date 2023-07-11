@@ -1,0 +1,431 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/header.pug
+
+        include inc/sidenav.pug
+
+        .page-content-wrapper.py-3.elements-page
+            .container
+                .elements-heading.d-flex.align-items-center.mb-3
+                    .icon-wrapper
+                        svg.bi.bi-list(width="24" height="24" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                            path(fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z")
+                    .heading-text
+                        h5.mb-0 Navigation
+                        span Modern &amp; elegant header, footer &amp; sidebar.
+
+                .card
+                    .card-body
+                        // Page Item  
+                        a.page--item(href="element-header-menu.html")
+                            | Header Menu
+                            i.fa.fa-angle-right
+
+                        // Page Item  
+                        a.page--item(href="element-footer-menu.html")
+                            | Footer Menu
+                            i.fa.fa-angle-right
+
+                        // Page Item  
+                        a.page--item(href="element-sidebar-left-menu.html")
+                            | Sidebar Left Menu
+                            i.fa.fa-angle-right
+
+                        // Page Item  
+                        a.page--item(href="element-sidebar-right-menu.html")
+                            | Sidebar Right Menu
+                            i.fa.fa-angle-right
+
+            .container.mt-3
+                .elements-heading.d-flex.align-items-center.mt-3.mb-3
+                    .icon-wrapper.bg-danger
+                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-exclamation" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                        </svg>
+                    .heading-text
+                        h5.mb-0 Notifications
+                        span Show your notifications in creative styles.
+
+                .card
+                    .card-body
+                        // Page Item  
+                        a.page--item(href="element-alerts.html")
+                            | Alerts
+                            i.fa.fa-angle-right
+
+                        // Page Item  
+                        a.page--item(href="element-toasts.html")
+                            | Toasts
+                            i.fa.fa-angle-right
+
+                        // Page Item  
+                        a.page--item(href="element-online-offline-detection.html")
+                            | Online / Offline Detection
+                            i.fa.fa-angle-right
+
+            .container.mt-3
+                .elements-heading.d-flex.align-items-center.mt-3.mb-3
+                    .icon-wrapper.bg-success
+                        <svg width="18" height="18" viewBox="0 0 16 16" class="bi bi-ui-checks" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z"/>
+                            <path fill-rule="evenodd" d="M2 1a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm0 8a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2H2zm.854-3.646l2-2a.5.5 0 1 0-.708-.708L2.5 4.293l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0zm0 8l2-2a.5.5 0 0 0-.708-.708L2.5 12.293l-.646-.647a.5.5 0 0 0-.708.708l1 1a.5.5 0 0 0 .708 0z"/>
+                            <path d="M7 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z"/>
+                            <path fill-rule="evenodd" d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    .heading-text
+                        h5.mb-0 Form Layouts
+                        span Make your form with what your user needs.
+
+                .card
+                    .card-body
+                        // Page Item  
+                        a.page--item(href="element-form-input.html")
+                            | Input
+                            i.fa.fa-angle-right
+
+                        // Page Item  
+                        a.page--item(href="element-form-textarea.html")
+                            | Textarea
+                            i.fa.fa-angle-right
+
+                        // Page Item  
+                        a.page--item(href="element-form-select.html")
+                            | Select
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-form-input-group.html")
+                            | Input Group
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-form-check.html")
+                            | Checkbox
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-form-radio.html")
+                            | Radio
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-form-file-upload.html")
+                            | File Upload
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-form-range.html")
+                            | Range
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-form-auto-complete.html")
+                            | Auto Complete
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-form-switches.html")
+                            | Switches
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-form-validation.html")
+                            | Form Validation
+                            i.fa.fa-angle-right
+
+            .container.mt-3
+                .elements-heading.d-flex.align-items-center.mt-3.mb-3
+                    .icon-wrapper.bg-danger
+                        <svg width="18" height="18" viewBox="0 0 16 16" class="bi bi-columns-gap" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M6 1H1v3h5V1zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12h-5v3h5v-3zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8H1v7h5V8zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6h-5v7h5V1zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
+                        </svg>
+                    .heading-text
+                        h5.mb-0 UI Elements
+                        span Impress your visitors with beautiful designs.
+
+                .card
+                    .card-body
+                        // Page Item 
+                        a.page--item(href="element-accordion.html")
+                            | Accordion
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-badge.html")
+                            | Badge
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-button.html")
+                            | Button
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-breadcrumb.html")
+                            | Breadcrumb
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-timeline.html")
+                            | Timeline
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-card.html")
+                            | Card
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-image-gallery.html")
+                            | Image Gallery
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-hero-blocks.html")
+                            | Hero Blocks
+                            i.fa.fa-angle-right
+                            
+                        // Page Item 
+                        a.page--item(href="element-tab.html")
+                            | Tab
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-user-ratings.html")
+                            | User Ratings
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-testimonial.html")
+                            | Testimonials
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-call-to-action.html")
+                            | Call to Action
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-partner-logo.html")
+                            | Partner Logo
+                            i.fa.fa-angle-right
+
+            .container.mt-3
+                .elements-heading.d-flex.align-items-center.mt-3.mb-3
+                    .icon-wrapper.bg-success
+                        <svg width="18" height="18" viewBox="0 0 16 16" class="bi bi-tools" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M0 1l1-1 3.081 2.2a1 1 0 0 1 .419.815v.07a1 1 0 0 0 .293.708L10.5 9.5l.914-.305a1 1 0 0 1 1.023.242l3.356 3.356a1 1 0 0 1 0 1.414l-1.586 1.586a1 1 0 0 1-1.414 0l-3.356-3.356a1 1 0 0 1-.242-1.023L9.5 10.5 3.793 4.793a1 1 0 0 0-.707-.293h-.071a1 1 0 0 1-.814-.419L0 1zm11.354 9.646a.5.5 0 0 0-.708.708l3 3a.5.5 0 0 0 .708-.708l-3-3z"/>
+                            <path fill-rule="evenodd" d="M15.898 2.223a3.003 3.003 0 0 1-3.679 3.674L5.878 12.15a3 3 0 1 1-2.027-2.027l6.252-6.341A3 3 0 0 1 13.778.1l-2.142 2.142L12 4l1.757.364 2.141-2.141zm-13.37 9.019L3.001 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
+                        </svg>
+                    .heading-text
+                        h5.mb-0 Helper
+                        span These helpers will help you build your website.
+
+                .card
+                    .card-body
+                        // Page Item 
+                        a.page--item(href="element-borders.html")
+                            | Borders
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-colors.html")
+                            | Colors
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-dividers.html")
+                            | Dividers
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-embed-video.html")
+                            | Embeds Video
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-images.html")
+                            | Images
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-list-group.html")
+                            | List Group
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-modal.html")
+                            | Modal
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-pagination.html")
+                            | Pagination
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-progress-bar.html")
+                            | Progress Bar
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-scrollspy.html")
+                            | Scrollspy
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-spinners.html")
+                            | Spinners
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-stretched-link.html")
+                            | Stretched link
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-shadows.html")
+                            | Shadows
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-sizing.html")
+                            | Sizing
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-tooltips.html")
+                            | Tooltips
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-text-truncation.html")
+                            | Text truncation
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-typography.html")
+                            | Typography
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-text.html")
+                            | Text
+                            i.fa.fa-angle-right
+
+            .container.mt-3
+                .elements-heading.d-flex.align-items-center.mt-3.mb-3
+                    .icon-wrapper.bg-info
+                        <svg width="18" height="18" viewBox="0 0 16 16" class="bi bi-sliders" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M14 3.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM11.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM7 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM4.5 10a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm9.5 3.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM11.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                            <path fill-rule="evenodd" d="M9.5 4H0V3h9.5v1zM16 4h-2.5V3H16v1zM9.5 14H0v-1h9.5v1zm6.5 0h-2.5v-1H16v1zM6.5 9H16V8H6.5v1zM0 9h2.5V8H0v1z"/>
+                        </svg>
+                    .heading-text
+                        h5.mb-0 Carousel
+                        span Display your content with a variety of styles.
+
+                .card
+                    .card-body
+                        // Page Item 
+                        a.page--item(href="element-bootstrap-carousel.html")
+                            | Bootstrap Carousel
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-owl-carousel.html")
+                            | Owl Carousel
+                            i.fa.fa-angle-right
+
+            .container.mt-3
+                .elements-heading.d-flex.align-items-center.mt-3.mb-3
+                    .icon-wrapper
+                        <svg width="18" height="18" viewBox="0 0 16 16" class="bi bi-table" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+                        </svg>
+                    .heading-text
+                        h5.mb-0 Tables
+                        span Show your data with tables.
+
+                .card
+                    .card-body
+                        // Page Item 
+                        a.page--item(href="element-basic-table.html")
+                            | Basic Table
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-data-table.html")
+                            | Data Table
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-price-table.html")
+                            | Price Table
+                            i.fa.fa-angle-right
+
+            .container.mt-3
+                .elements-heading.d-flex.align-items-center.mt-3.mb-3
+                    .icon-wrapper.bg-info
+                        <svg width="18" height="18" viewBox="0 0 16 16" class="bi bi-clock-history" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
+                            <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
+                            <path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+                        </svg>
+                    .heading-text
+                        h5.mb-0 Timer
+                        span Countdown or count up your milestones.
+                .card
+                    .card-body
+                        // Page Item 
+                        a.page--item(href="element-countdown.html")
+                            | Count Down
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-counterup.html")
+                            | Counter Up
+                            i.fa.fa-angle-right
+
+            .container.mt-3
+                .elements-heading.d-flex.align-items-center.mt-3.mb-3
+                    .icon-wrapper
+                        <svg width="18" height="18" viewBox="0 0 16 16" class="bi bi-bar-chart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5h-2v12h2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+                        </svg>
+                    .heading-text
+                        h5.mb-0 Charts
+                        span Lots of charts example are given below:
+
+                .card
+                    .card-body
+                        // Page Item 
+                        a.page--item(href="element-area-charts.html")
+                            | Area Chart
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-column-charts.html")
+                            | Column Chart
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-line-charts.html")
+                            | Line Chart
+                            i.fa.fa-angle-right
+
+                        // Page Item 
+                        a.page--item(href="element-pie-charts.html")
+                            | Pie Chart
+                            i.fa.fa-angle-right
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

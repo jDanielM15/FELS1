@@ -1,0 +1,197 @@
+/* :: Testimonial CSS */
+
+.testimonial-style1 {
+    position: relative;
+    z-index: 1;
+
+    .single-testimonial-slide {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: flex-start;
+
+        .image-wrapper {
+            margin-right: 1.25rem;
+            flex: 0 0 80px;
+            width: 80px;
+            max-width: 80px;
+            border-radius: 1rem;
+
+            img {
+                border-radius: 1rem;
+            }
+        }
+
+        svg {
+            position: absolute;
+            top: -10px;
+            left: 60px;
+            z-index: 1;
+        }
+    }
+
+    .owl-dots {
+        position: absolute;
+        z-index: 10;
+        right: 1.5rem;
+        bottom: 1.625rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .owl-dot {
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color: $text-gray;
+            margin: 0 .25rem;
+            border-radius: 50%;
+
+            &.active {
+                background-color: $heading;
+            }
+        }
+    }
+}
+
+.testimonial-style2 {
+    position: relative;
+    z-index: 1;
+
+    .owl-stage {
+        display: flex;
+        align-items: center;
+    }
+
+    .single-testimonial-slide {
+        transition-duration: 500ms;
+        position: relative;
+        z-index: 1;
+        border: 1px solid transparent;
+        padding: 1rem;
+        border-radius: .5rem;
+        margin: 1rem 0;
+        transform: scale(.8);
+
+        .image-wrapper {
+            position: relative;
+            z-index: 1;
+            margin: 0 auto 1.5rem;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+
+            &::after {
+                width: 100%;
+                height: 100%;
+                border: 2px solid $white;
+                position: absolute;
+                content: "";
+                top: -5px;
+                left: 5px;
+                border-radius: 50%;
+                z-index: -1;
+            }
+
+            &::before {
+                border: 1px solid $white;
+                content: "\f10e";
+                font-family: "FontAwesome";
+                position: absolute;
+                bottom: -5px;
+                left: 5px;
+                width: 30px;
+                height: 30px;
+                background-color: $warning;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 29px;
+                color: $white;
+                font-size: 1rem;
+            }
+
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .text-content {
+            text-align: center;
+        }
+    }
+
+    .center {
+        .single-testimonial-slide {
+            background-color: $warning;
+            transform: scale(1);
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+
+            .text-content {
+                p {
+                    color: $heading;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .owl-prev,
+    .owl-next {
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        top: 50%;
+        left: 5%;
+        z-index: 10;
+        background-color: $white;
+        text-align: center;
+        color: $heading;
+        margin-top: -1rem;
+        line-height: 2rem;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+        transition-duration: 500ms;
+
+        &:hover,
+        &:focus {
+            background-color: $warning;
+        }
+    }
+
+    .owl-next {
+        left: auto;
+        right: 5%;
+    }
+}
+
+.testimonial-style3 {
+    position: relative;
+    z-index: 1;
+
+    .owl-dots {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+
+        .owl-dot {
+            width: 1rem;
+            height: 0.25rem;
+            background-color: $text-gray;
+            margin: 0 .25rem;
+            border-radius: .25rem;
+
+            &.active {
+                background-color: $heading;
+            }
+        }
+    }
+
+    .single-testimonial-slide {
+
+        .text-content {
+            p {
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+}

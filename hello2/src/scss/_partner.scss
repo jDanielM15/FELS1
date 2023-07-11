@@ -1,0 +1,24 @@
+/* :: Partner CSS */
+
+.partner-slide {
+    .owl-dots {
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .owl-dot {
+            transition-duration: 400ms;
+            width: 1.5rem;
+            height: .25rem;
+            border-radius: 50px;
+            background-color: $gray;
+            margin: 0 .25rem;
+
+            &.active {
+                background-color: $primary;
+                width: 1.75rem;
+            }
+        }
+    }
+}

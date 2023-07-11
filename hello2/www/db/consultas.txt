@@ -1,0 +1,5 @@
+SELECT idLocal FROM clientes ORDER BY  idLocal DESC limit 1
+
+SELECT COUNT(idLog) AS total, SUM(estado) AS confirmacion,idLog FROM referencialog group BY idLog
+
+update clientes set idRemoto='71'   where idLocal=(SELECT idLocal FROM clientes ORDER BY  idLocal DESC limit 1)

@@ -1,0 +1,90 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Range
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Range
+
+            .container
+                .card
+                    .card-body
+                        label.form-label(for="bootstrapRange") Bootstrap range
+                        input.form-range#bootstrapRange(type="range")            
+            
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Range with step
+
+            .container
+                .card
+                    .card-body
+                        label.form-label(for="stepRange") Range with step
+                        input.form-range#stepRange(type="range", min="0", max="10", step="1")
+            
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Range with value
+
+            .container
+                .card
+                    .card-body
+                        .range-with-value.d-flex.align-items-center
+                            input.form-range(type="range", min="0", max="100", value="50", step="1", onmousemove="rangevalue.value=value")
+                            output.py-1.px-2.border.border-2.border-light.text-dark.rounded.ms-3#rangevalue
+            
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Range with double slide
+
+            .container
+                .card
+                    .card-body
+                        input.custom-range-slider(type="text", name="my-range", value="", data-type="double", data-min="10", data-max="30", data-step="1", data-prefix="$ ", data-hide-min-max="true", data-skin="round", data-grid="true", data-grid-num="12", data-grid-snap="true")
+            
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Single range
+
+            .container
+                .card
+                    .card-body
+                        input.custom-range-slider(type="text", name="my-range", value="", data-type="single", data-min="10", data-max="30", data-step="1", data-prefix="$ ", data-hide-min-max="true", data-skin="square", data-grid="true", data-grid-num="12", data-grid-snap="true")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

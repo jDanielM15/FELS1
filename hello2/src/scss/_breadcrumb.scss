@@ -1,0 +1,146 @@
+/* :: Breadcrumb CSS */
+
+.breadcrumb-wrapper {
+    background-color: $white;
+}
+
+.breadcrumb {
+    background-color: $white;
+}
+
+.breadcrumb-item {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.breadcrumb-one {
+    position: relative;
+    z-index: 1;
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        color: $text;
+        content: "\f105";
+        font-family: "FontAwesome";
+    }
+
+    .breadcrumb-item {
+        font-size: 14px;
+        color: $heading;
+    }
+
+    .breadcrumb-item a {
+        color: $text;
+
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
+}
+
+.breadcrumb-two {
+    position: relative;
+    z-index: 1;
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        color: $text;
+        content: "\f101";
+        font-family: "FontAwesome";
+    }
+
+    .breadcrumb-item {
+        font-size: 14px;
+        color: $heading;
+    }
+
+    .breadcrumb-item a {
+        color: $text;
+
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
+}
+
+.breadcrumb-three {
+    position: relative;
+    z-index: 1;
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        color: $text;
+        content: "\f105";
+        font-family: "FontAwesome";
+    }
+
+    .breadcrumb-item {
+        color: $heading;
+    }
+
+    .breadcrumb-item a {
+        color: $text;
+
+        svg {
+            margin-right: 0.25rem;
+            color: $primary;
+        }
+
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
+}
+
+.breadcrumb-four {
+    position: relative;
+    z-index: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        color: $white;
+        content: "\f105";
+        font-family: "FontAwesome";
+    }
+
+    .breadcrumb-item {
+        color: $white;
+    }
+
+    .breadcrumb-item a {
+        color: $white;
+
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
+}
+
+.breadcrumb-colorful {
+    position: relative;
+    z-index: 1;
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        color: rgba(255, 255, 255, 0.6);
+        content: "\f105";
+        font-family: "FontAwesome";
+    }
+
+    .breadcrumb-item {
+        font-size: 14px;
+        color: $white;
+    }
+
+    .breadcrumb-item a {
+        color: rgba(255, 255, 255, 0.6);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+
+        &:hover,
+        &:focus {
+            color: $white;
+        }
+    }
+}

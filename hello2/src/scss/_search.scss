@@ -1,0 +1,21 @@
+/* :: Search CSS */
+
+.search-form-wrapper {
+    p {
+        font-size: 12px;
+    }
+    form {
+        border-bottom: 1px solid $border;
+    }
+}
+
+.single-search-result {
+    position: relative;
+    z-index: 1;
+
+    a {
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+}

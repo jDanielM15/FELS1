@@ -1,0 +1,227 @@
+/* :: Image Gallery CSS */
+
+.image-gallery-card {
+    position: relative;
+    z-index: 1;
+
+    .gallery-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        button {
+            outline: none;
+            border: 0;
+            background-color: transparent;
+            font-size: 1rem;
+            position: relative;
+            z-index: 1;
+            line-height: 1;
+            padding: 2px 6px;
+            color: $text;
+            font-weight: 500;
+
+            &::after {
+                transition-duration: 300ms;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 6px;
+                height: 6px;
+                margin-left: -3px;
+                z-index: 1;
+                content: '';
+                background-color: $primary;
+                border-radius: 50%;
+                opacity: 0;
+            }
+
+            &.active {
+                color: $primary;
+            }
+
+            &.active::after {
+                bottom: -.75rem;
+                opacity: 1;
+            }
+        }
+    }
+
+    .single-image-gallery {
+        position: relative;
+        z-index: 1;
+        border-radius: .75rem;
+
+        img {
+            border-radius: .75rem;
+        }
+
+        .fav-icon {
+            transition-duration: 500ms;
+            background-color: $white;
+            color: $danger;
+            position: absolute;
+            width: 1.75rem;
+            height: 1.75rem;
+            top: .5rem;
+            right: .5rem;
+            z-index: 10;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            visibility: hidden;
+            opacity: 0;
+
+            svg {
+                padding-top: .125rem;
+            }
+
+            &.active {
+                background-color: $danger;
+                color: $white;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            .fav-icon {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    .gallery-wrapper {
+        .single-image-gallery {
+            .fav-icon {
+                right: 1rem;
+            }
+        }
+    }
+}
+
+/* Magnific Popup Redesign CSS */
+
+.mfp-bg {
+    bottom: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: $dark;
+    opacity: .7;
+}
+
+img.mfp-img {
+    padding: 65px 0 77px;
+    border-radius: .5rem;
+}
+
+.mfp-bottom-bar {
+    display: none !important;
+}
+
+.mfp-figure::after {
+    opacity: 0;
+    display: none !important;
+}
+
+.mfp-image-holder .mfp-close {
+    color: $dark;
+    right: 6px;
+    text-align: center;
+    padding-right: 0;
+    width: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 1.5rem;
+    top: 71px;
+    line-height: 1.5rem;
+    cursor: pointer !important;
+    opacity: 1;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.mfp-iframe-holder .mfp-close {
+    color: $dark;
+    right: 6px;
+    text-align: center;
+    padding-right: 0;
+    width: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 1.5rem;
+    top: 6px;
+    line-height: 1.5rem;
+    cursor: pointer !important;
+    opacity: 1;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.mfp-arrow-left::before {
+    display: none !important;
+}
+
+.mfp-arrow-right::before {
+    display: none !important;
+}
+
+.mfp-arrow-right {
+    right: 5%;
+}
+
+.mfp-arrow-left {
+    left: 5%;
+}
+
+.mfp-arrow {
+    opacity: 1;
+}
+
+.mfp-zoom-in .mfp-with-anim {
+    transition: all 400ms ease-in-out;
+    transform: scale(0.2);
+    opacity: 0;
+}
+
+.mfp-zoom-in.mfp-bg {
+    transition: all 400ms ease-out;
+    opacity: 0;
+}
+
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.7;
+}
+
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+    transform: scale(.2);
+    opacity: 0;
+}
+
+.mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+.mfp-with-fade .mfp-content,
+.mfp-with-fade.mfp-bg {
+    opacity: 0;
+    transition: opacity .5s ease-out;
+}
+
+.mfp-with-fade.mfp-ready .mfp-content {
+    opacity: 1;
+}
+
+.mfp-with-fade.mfp-ready.mfp-bg {
+    opacity: 0.7;
+}
+
+.mfp-with-fade.mfp-removing.mfp-bg {
+    opacity: 0;
+}

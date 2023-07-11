@@ -1,0 +1,194 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Breadcrumb
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Basic Breadcrumb
+
+            .container
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb.mb-0.py-2.px-3.rounded
+                        li.breadcrumb-item
+                            a(href="#") Home
+                        li.breadcrumb-item
+                            a(href="#") Elements
+                        li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Breadcrumb One
+
+            .breadcrumb-wrapper.breadcrumb-one
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.py-4.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Breadcrumb Two
+
+            .breadcrumb-wrapper.breadcrumb-two
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.py-4.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Breadcrumb Three
+
+            .breadcrumb-wrapper.breadcrumb-three
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.py-4.px-1
+                            li.breadcrumb-item
+                                a(href="#")
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                    </svg>
+                                    | Home
+                            li.breadcrumb-item
+                                a(href="#")
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                                    </svg>
+                                    | Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Breadcrumb Four
+
+            .breadcrumb-wrapper.breadcrumb-four.bg-overlay(style="background-image: url('img/bg-img/30.jpg')")
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.bg-transparent.py-4.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Breadcrumb Colorful
+
+            .breadcrumb-wrapper.bg-primary.breadcrumb-colorful
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.bg-primary.py-3.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .mb-4
+
+            .breadcrumb-wrapper.bg-success.breadcrumb-colorful
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.bg-success.py-3.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .mb-4
+
+            .breadcrumb-wrapper.bg-warning.breadcrumb-colorful
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.bg-warning.py-3.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .mb-4
+
+            .breadcrumb-wrapper.bg-danger.breadcrumb-colorful
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.bg-danger.py-3.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .mb-4
+
+            .breadcrumb-wrapper.bg-info.breadcrumb-colorful
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.bg-info.py-3.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .mb-4
+
+            .breadcrumb-wrapper.bg-dark.breadcrumb-colorful
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.bg-dark.py-3.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

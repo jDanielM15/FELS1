@@ -1,0 +1,67 @@
+{
+  "name": "affan-pwa-mobile-html-template",
+  "version": "1.2.0",
+  "description": "Affan - PWA Mobile HTML Template",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "author": "Designing-World",
+  "license": "",
+  "devDependencies": {
+    "android-debug-db-cordova-plugin": "^0.1.2",
+    "autoprefixer": "^9.8.5",
+    "browserslist": "^4.13.0",
+    "cordova-android": "^9.1.0",
+    "cordova-browser": "^6.0.0",
+    "cordova-plugin-cleartext": "^1.0.0",
+    "cordova-plugin-file": "^6.0.2",
+    "cordova-plugin-file-opener2": "^3.0.5",
+    "cordova-plugin-file-transfer": "^1.7.1",
+    "cordova-plugin-hello": "git+https://github.com/don/cordova-plugin-hello.git",
+    "cordova-plugin-network-information": "^3.0.0",
+    "cordova-sqlite-storage": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "apexcharts": "^3.19.3",
+    "bootstrap": "^5.0.1",
+    "bootstrap-icons": "^1.3.0",
+    "cordova": "^11.0.0",
+    "counterup": "^1.0.2",
+    "datatables.net-bs4": "^1.10.22",
+    "font-awesome": "^4.7.0",
+    "imagesloaded": "^4.1.4",
+    "ion-rangeslider": "^2.3.1",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^2.2.4",
+    "jquery-countdown": "^2.2.0",
+    "jquery-waypoints": "^2.0.5",
+    "jquery.easing": "^1.4.1",
+    "magnific-popup": "^1.1.0",
+    "owl.carousel": "^2.3.4",
+    "wowjs": "^1.1.3"
+  },
+  "cordova": {
+    "platforms": [
+      "browser",
+      "android"
+    ],
+    "plugins": {
+      "cordova-sqlite-storage": {},
+      "android-debug-db-cordova-plugin": {},
+      "cordova-plugin-cleartext": {},
+      "cordova-plugin-network-information": {},
+      "com.example.hello": {},
+      "cordova-plugin-file": {},
+      "cordova-plugin-file-transfer": {},
+      "cordova-plugin-file-opener2": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      }
+    }
+  }
+}

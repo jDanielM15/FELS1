@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="content-encoding" value="UTF-8" />
+		<meta name="format-detection" content="telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script src="scripts/jquery-3.4.1.min.js"></script>
+		<title>cordova-plugin-sms-retriever</title>
+	</head>
+	<body>
+		<h1 style="font-size:18px">cordova-plugin-btprinter demo</h1><br />
+		<fieldset>
+			<legend>Select Printer</legend>
+			<select size="1" id="btpPrinter" disabled="disabled"></select>
+		</fieldset>
+		<fieldset>
+			<legend>BTPrinter plugin methods</legend>
+			<button type="button" id="status">status</button>
+			<button type="button" id="list">list</button>
+			<button type="button" id="connect">connect</button>
+			<button type="button" id="connected">connected</button>
+			<button type="button" id="disconnect">disconnect</button>
+			<hr />
+			<button type="button" id="reset">Reset</button>
+			<button type="button" id="lineFeed">Line Feed</button>
+			<button type="button" id="fontDemo">Font Demo</button>
+			<button type="button" id="sizeDemo">Size Demo</button>
+			<button type="button" id="beepX1">Beep 1x</button>
+			<button type="button" id="beepX3">Beep 3x</button>
+			<button type="button" id="printGreek">Ελληνικά Test</button>
+		</fieldset>
+		<fieldset>
+			<legend>Send ESC/POS command</legend>
+			<button type="button" id="printPOSCommand" style="float:right">printPOSCommand</button>
+			<input type="text" id="txtPOS" value="0A" size="12" maxlength="64" placeholder="Eg:0A" /><br /><small>0A=LF</small>
+		</fieldset>
+		<fieldset>
+			<legend>Print Text</legend>
+			<textarea rows="3" cols="10" id="txtSample">» BTPrinter Plugin Demo
+» ©2020 Andrés Zsögön</textarea>
+			<button type="button" id="printText">IMPRIMIR</button>
+			<button type="button" id="printTextSizeAlign">printTextSizeAlign</button>
+			<button type="button" id="printTitle">printTitle</button>
+		</fieldset>
+		<fieldset>
+			<legend>Print Base64 Image</legend>
+			<textarea rows="3" cols="10" id="txtBase64" placeholder="data:image/png;base64,">data:image/png;base64,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</textarea>
+			<button type="button" id="printBase64">printBase64</button>
+		</fieldset>
+		<fieldset>
+			<legend>Print QR Code</legend>
+			<textarea rows="3" cols="10" id="txtQRData">http://www.andreszsogon.com/</textarea>
+			<label>QR code model</label>
+			<select size="1" id="optQRModel">
+				<option value="49" selected="selected">MODEL 1</option>
+				<option value="50">MODEL 2</option>
+				<option value="51">MICRO QR</option>
+			</select>
+			<label>QR code size</label>
+			<select size="1" id="optQRSize">
+				<option value="8">8: SMALL</option>
+				<option value="32" selected="selected">32: MEDIUM</option>
+				<option value="48">48: LARGE</option>
+				<option value="64">64: X-LARGE</option>
+			</select>
+			<label>Error correction level</label>
+			<select size="1" id="optQREclevel">
+				<option value="48">RECOVERY CAPACITY 7%</option>
+				<option value="49">RECOVERY CAPACITY 15%</option>
+				<option value="50" selected="selected">RECOVERY CAPACITY 25%</option>
+				<option value="51">RECOVERY CAPACITY 30%</option>
+			</select>
+			<button type="button" id="printQRCode">printQRCode</button>
+		</fieldset>
+		<fieldset>
+			<legend>Print Barcode</legend>
+			<label>Text / number</label>
+			<input type="text" id="txtBarcode" value="012345678901" maxlength="64" />
+			<label>Barcode system</label>
+			<select size="1" id="optBCSystem">
+				<option value="0">0: UPC-A</option>
+				<option value="1">1: UPC-E</option>
+				<option value="2" selected="selected">2: EAN13 / JAN13</option>
+				<option value="3">3: EAN8 / JAN8</option>
+				<option value="4">4: CODE39</option>
+				<option value="5">5: ITF</option>
+				<option value="6">6: CODABAR</option>
+			</select>
+			<label>HRI characters position</label>
+			<select size="1" id="optBCPosition">
+				<option value="0">Not printed</option>
+				<option value="1">Above barcode</option>
+				<option value="2" selected="selected">Below barcode</option>
+				<option value="3">Above and below barcode</option>
+			</select>
+			<label>Font selection</label>
+			<select size="1" id="optBCFont">
+				<option value="0" selected="selected">0: FONT A</option>
+				<option value="1">1: FONT B</option>
+				<option value="2">2: FONT C</option>
+				<option value="3">3: FONT D</option>
+				<option value="4">4: FONT E</option>
+			</select>
+			<label>Barcode height</label>
+			<select size="1" id="optBCHeight">
+				<option value="16">16</option>
+				<option value="32">32</option>
+				<option value="64" selected="selected">64</option>
+				<option value="128">128</option>
+				<option value="192">192</option>
+			</select>
+			<button type="button" id="printBarcode">printBarcode</button>
+		</fieldset>
+		<fieldset>
+			<legend>Set Encoding</legend>
+			<button type="button" id="setEncoding" style="float:right">setEncoding</button>
+			<input type="text" id="txtEncoding" value="ISO-8859-1" size="12" maxlength="64" placeholder="Eg:ISO-8859-1" /><br /><small>Default: ISO-8859-1</small>
+		</fieldset>
+		<fieldset>
+			<legend>Inverted Color</legend>
+			<span id="invertedIcon" style="display:none;float:right;font-size:24px">&#9745;</span>
+			<button type="button" id="enableInverted">Enable</button>
+			<button type="button" id="disableInverted">Disable</button>
+		</fieldset>
+		<fieldset>
+			<legend>Alignment</legend>
+			<select size="1" id="optAlign">
+				<option value="0">ESC_ALIGN_LEFT</option>
+				<option value="1">ESC_ALIGN_CENTER</option>
+				<option value="2">ESC_ALIGN_RIGHT</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Size</legend>
+			<select size="1" id="optSize">
+				<option value="00">00: NORMAL</option>
+				<option value="01">01: REDUCED</option>
+				<option value="10">10: DOUBLE HEIGHT</option>
+				<option value="20">20: DOUBLE WIDTH</option>
+				<option value="30">30: QUAD AREA</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>About Plugin</legend>
+			<label>CesarBalzer/Cordova-Plugin-BTPrinter</label>
+			<button type="button" id="btnWebsite">GitHub Page</button>
+		</fieldset>
+		<fieldset>
+			<legend>About Demo App</legend>
+			<label>This demo was created by Andrés Zsögön</label>
+			<button type="button" id="btnAndreszsogon">Support Website</button>
+		</fieldset>
+
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="scripts/platformOverrides.js"></script>
+		<script type="text/javascript" src="scripts/index.js"></script>
+	</body>
+</html>

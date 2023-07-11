@@ -1,0 +1,597 @@
+doctype html
+html#previewPage(lang="en")
+    head
+        include inc/head.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+    body
+        .preview-iframe-wrapper
+            // Header Area
+            .demo-header-wrapper
+                .container.demo-container
+                    // Header Content 
+                    .header-content.header-style-five.position-relative.d-flex.align-items-center.justify-content-between
+                        // Logo Wrapper 
+                        .logo-wrapper
+                            a(href="page-home.html")
+                                img(src="img/core-img/logo.png", alt="")
+
+                        // Settings 
+                        .setting-wrapper
+                            include inc/setting-btn.pug
+
+            // Preview Hero Area 
+            .preview-hero-area
+                span.big-shadow-text Affan
+
+                .container.demo-container.direction-rtl
+                    .row.g-2.align-items-center
+                        .col-12.col-lg
+                            h6.version-number.d-inline-block.px-3.py-2.rounded-pill.mb-3.lh-1 Current version - 1.2.0
+                            h2.demo-title.mb-3
+                                span Affan 
+                                |  - PWA Mobile HTML Template
+                            ul.demo-desc.ps-0.mb-5
+                                li
+                                    i.bi.bi-check2
+                                    | PWA Ready
+                                li
+                                    i.bi.bi-check2
+                                    | Creative Design
+                                li
+                                    i.bi.bi-check2
+                                    | Bootstrap 5.0.1
+                                li
+                                    i.bi.bi-check2
+                                    | Dark Mode
+                                li
+                                    i.bi.bi-check2
+                                    | Right to Left (rtl)
+
+                            a#videobtn.btn.btn-outline-danger.btn-lg(href="https://www.youtube.com/watch?v=-D6QFpH7zCA", data-effect="mfp-zoom-in") Watch  promo video
+
+                        .col-12.col-lg-5
+                            .text-center
+                                iframe.shadow-lg(src="element-hero-blocks.html")
+
+                        .col-12.col-lg
+                            .text-lg-end
+                                // Mobile Live Preview 
+                                .live-preview-btn.mb-3
+                                    a.btn.btn-primary.btn-lg.d-lg-none.mb-5(href="element-hero-blocks.html", target="_blank") Click the button to live preview
+
+                                // QR Code 
+                                .qr-code-wrapper
+                                    img.mb-3(src="img/demo-img/qr-code.svg", alt="")
+                                    h6.mb-0 Scan this QR code to view <br> on your mobile device.
+
+            // Features Area 
+            .features-area
+                .container.demo-container.direction-rtl
+                    .row.justify-content-center
+                        .col-12.col-lg-7.col-xl-6
+                            .section-heading.text-center
+                                h2.display-5.mb-3 Key Features
+                                p.mb-0 Affan is a modern and latest technology-based mobile template. It's come with creative design, bootstrap 5, PWA ready, dark mode &amp; right to left (rtl) features.
+
+                    .row.g-3
+                        .col-6.col-lg-3.col-xl-2
+                            .card.active
+                                .card-body.text-center
+                                    img.mb-3(src="img/demo-img/bootstrap.png", alt="")
+                                    h6.mb-0 Bootstrap 5
+
+                        .col-6.col-lg-3.col-xl-2
+                            .card.active
+                                .card-body.text-center
+                                    img.mb-3(src="img/demo-img/pwa.png", alt="")
+                                    h6.mb-0 PWA Ready
+
+                        .col-6.col-lg-3.col-xl-2
+                            .card.active
+                                .card-body.text-center
+                                    img.mb-3(src="img/demo-img/npm.png", alt="")
+                                    h6.mb-0 npm
+
+                        .col-6.col-lg-3.col-xl-2
+                            .card.active
+                                .card-body.text-center
+                                    img.mb-3(src="img/demo-img/gulp.png", alt="")
+                                    h6.mb-0 Gulp 4
+
+                        .col-6.col-lg-3.col-xl-2
+                            .card.active
+                                .card-body.text-center
+                                    img.mb-3(src="img/demo-img/pug.png", alt="")
+                                    h6.mb-0 Pug
+
+                        .col-6.col-lg-3.col-xl-2
+                            .card.active
+                                .card-body.text-center
+                                    img.mb-3(src="img/demo-img/sass.png", alt="")
+                                    h6.mb-0 SCSS
+
+                        .col-6.col-lg-3.col-xl-2
+                            .card.active
+                                .card-body.text-center
+                                    img.mb-3(src="img/demo-img/dark.png", alt="")
+                                    h6.mb-0 Dark Mode
+
+                        .col-6.col-lg-3.col-xl-2
+                            .card.active
+                                .card-body.text-center
+                                    svg.bi.bi-align-end.mb-3.text-danger(width="40" height="40" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                        path(fill-rule="evenodd" d="M14.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 1 0v-13a.5.5 0 0 0-.5-.5z")
+                                        path(d="M13 7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z")
+                                    h6.mb-0 RTL Ready
+
+                        .col-6.col-lg-3.col-xl-2
+                            .card.active
+                                .card-body.text-center
+                                    img.mb-3(src="img/demo-img/jquery.png", alt="")
+                                    h6.mb-0 jQuery
+
+                        .col-6.col-lg-3.col-xl-2
+                            .card.active
+                                .card-body.text-center
+                                    img.mb-3(src="img/demo-img/css3.png", alt="")
+                                    h6.mb-0 CSS3
+
+                        .col-6.col-lg-3.col-xl-2
+                            .card.active
+                                .card-body.text-center
+                                    img.mb-3(src="img/demo-img/html5.png", alt="")
+                                    h6.mb-0 HTML5
+
+                        .col-6.col-lg-3.col-xl-2
+                            .card.active
+                                .card-body.text-center
+                                    svg.bi.bi-columns.mb-3.text-danger(width="40" height="40" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                        path(fill-rule="evenodd" d="M15 2H1v12h14V2zM1 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H1z")
+                                        path(fill-rule="evenodd" d="M7.5 14V2h1v12h-1zm0-8H1V5h6.5v1zm7.5 5H8.5v-1H15v1z")
+                                    h6.mb-0 220+ Elements
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Varieties Header Menu
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Varieties Footer Menu
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Left &amp; Right Menu
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Alerts &amp; Toasts
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Automated Online/Offline Detection
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 RTL Ready
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 220+ Reusable Elements
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 35+ Ready Pages
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Varieties Form Elements
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Auto Complete Form
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Range Input
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Accordion/FAQ
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Timeline
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Image Gallery
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 User Ratings
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Lots of Helper Elements
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Carousel
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Data Table
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Countdown &amp; Counterup
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Apex Charts
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Versatile Mobile Template
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Nicely Designed
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 PWA Ready
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Bootstrap 5.0.1
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Node Package Manager
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Gulp 4
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 SCSS CSS preprocessor
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Pug
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Coded with the Latest Technology
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Bug Free Code
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Cross Browser Support
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Notifications Pages
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Language Page
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Password Strength Meter
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 OTP Pages
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Shop Pages
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 User Profile
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Coming Soon
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 jQuery
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Authentication Pages
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Unique Design
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Blog Pages
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Google Fonts
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Easy to Customize
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Clean &amp; 100% Validate Code
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Settings Page
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 Dark Mode
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-check text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                                        </svg>
+                                        h6.ms-1.mb-0 404
+
+            // Footer Area 
+            .preview-footer-area
+                .container.demo-container.direction-rtl.h-100.d-flex.align-items-center.justify-content-between
+                    p.mb-0 2021 &copy; Made by Designing World
+                    a.btn.btn-info.btn-sm(href="https://themeforest.net/item/affan-pwa-mobile-html-template/29715548" target="_blank") Buy Now
+
+        include inc/footer.pug
